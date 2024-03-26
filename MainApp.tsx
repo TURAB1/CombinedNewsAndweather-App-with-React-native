@@ -21,7 +21,7 @@ import { fetchingNewsData } from './redux/reducers/news_reducer';
 import { HomeScreen } from './components/home';
 import { WeatherInfoScreen } from './components/WeatherInfo';
 
-function MainNews(): React.JSX.Element {
+function MainApp(): React.JSX.Element {
   const Tab = createBottomTabNavigator();
   const dispatch = useDispatch<any>();
 
@@ -133,4 +133,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default MainNews;
+export default MainApp;

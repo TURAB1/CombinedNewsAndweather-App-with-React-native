@@ -1,11 +1,11 @@
 import { Provider } from "react-redux";
 import {store} from './redux/store';
-import MainNews from "./MainNews";
+import MainApp from "./MainApp";
  
  function App(){
     return(
       <Provider store={store} >
-        <MainNews/>
+        <MainApp/>
       </Provider>
     )
   }

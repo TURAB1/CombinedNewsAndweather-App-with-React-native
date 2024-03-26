@@ -76,16 +76,12 @@ const NewsRead=()=>{
 
  const handleNewsClick=(newsImage:string,description:any)=>{
       // setNewsUrl(newsUrl)
-      setNewsImage(newsImage);
-      setNewsContent(description);
+     setNewsImage(newsImage);
+     setNewsContent(description);
      setNewsClick(true);
      console.log("news clicked");
      console.log(newsUrl);
-   }
-
-
-
-
+  }
 
  return (
    <SafeAreaView >
@@ -160,33 +156,33 @@ const styles = StyleSheet.create({
       width:60 
     },
   
-  button:{
-    backgroundColor:"#080E4B",
-    borderRadius:2,
-    height:30,
-    width:75,
-    justifyContent:"center",
-   
-  },
-  buttonText:{
-   color:"white"
-  },
-  scrollViewContainter:{
-    marginTop:20,
-    height:570,
-   
-  },
-  newsImage:{
-    height:250,
-    width:250,
-    alignSelf:"center"
-  },
-  infoUnavailable:{
-    color:"red",alignSelf:"center"
-  },
-  newsContent:{
-    marginLeft:5,
-    marginRight:5
-  }
+    button:{
+      backgroundColor:"#080E4B",
+      borderRadius:2,
+      height:30,
+      width:75,
+      justifyContent:"center",
+    
+    },
+    buttonText:{
+    color:"white"
+    },
+    scrollViewContainter:{
+      marginTop:20,
+      height:570,
+    
+    },
+    newsImage:{
+      height:250,
+      width:250,
+      alignSelf:"center"
+    },
+    infoUnavailable:{
+      color:"red",alignSelf:"center"
+    },
+    newsContent:{
+      marginLeft:5,
+      marginRight:5
+    }
   
-  });
+});

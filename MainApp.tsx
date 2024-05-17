@@ -16,8 +16,8 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { SettingsScreen } from './components/settings';
-import {useSelector, useDispatch} from 'react-redux';
-import { fetchingNewsData } from './redux/reducers/news_reducer'; 
+import { useDispatch} from 'react-redux';
+import { fetchingNewsData } from './reduxFolder/reducers/news_reducer'; 
 import { HomeScreen } from './components/home';
 import { WeatherInfoScreen } from './components/WeatherInfo';
 
@@ -27,6 +27,7 @@ function MainApp(): React.JSX.Element {
 
   React.useEffect( ()=>{
     dispatch(fetchingNewsData("science"));
+
   },[]);
 
   return (
@@ -124,7 +125,7 @@ const styles = StyleSheet.create({
     marginTop:10
   },
   buttonText:{
-  color:"white"
+   color:"white"
   },
   scrollViewContainter:{
     marginTop:20,

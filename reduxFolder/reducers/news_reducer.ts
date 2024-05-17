@@ -13,7 +13,7 @@ export const fetchingNewsData=createAsyncThunk("fetchingData",async(category:str
 const newsSlice=createSlice({
   name:"news",
   initialState: {
-    isLoading:false,
+    isLoading:true,
     error:false,
     data:null,
     category:"science",
